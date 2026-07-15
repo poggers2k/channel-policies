@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Petulant Pizza</title>
+<style>
+  :root {
+    --bg: #FAFAF9;
+    --text: #1F2328;
+    --muted: #5B6470;
+    --accent: #2B4C5C;
+    --border: #E3E1DC;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  .site-header {
+    margin-bottom: 40px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .brand {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+  .tagline {
+    font-size: 1.05rem;
+    margin: 0 0 20px;
+    max-width: 54ch;
+  }
+  .site-nav { display: flex; gap: 24px; }
+  .site-nav a { font-size: 0.9rem; font-weight: 650; }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 48px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 650;
+    color: var(--accent);
+    margin: 40px 0 12px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p, li { font-size: 1rem; }
+  ul { padding-left: 1.3em; margin: 12px 0; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); text-decoration-color: var(--border); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: currentColor; }
+  strong { font-weight: 650; }
+  .placeholder {
+    background: #FFF3D6;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 0.95em;
+  }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="site-header">
+    <p class="brand">Petulant Pizza</p>
+    <p class="tagline">An automated pipeline that researches, narrates, and publishes short-form true crime and mystery videos to a single YouTube channel.</p>
+    <nav class="site-nav">
+      <a href="#privacy-policy">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+    </nav>
+  </div>
+
+  <h1 id="privacy-policy">Privacy Policy</h1>
+  <p class="updated">Last updated: July 13, 2026</p>
+
+  <p>Petulant Pizza ("the Service," "we," "us") is an automated content-publishing tool that generates short-form video content and publishes it to a YouTube channel. This policy explains what information the Service accesses when you connect your Google Account, how that information is used, and the choices available to you.</p>
+
+  <p>This Service is operated by a single developer to manage a single YouTube channel — it is not a public, multi-tenant platform. If you are the account holder who connects it, this policy describes exactly what happens on your account when you do.</p>
+
+  <h2>Information We Access</h2>
+  <p>When you authorize Petulant Pizza to connect to your Google Account, it requests permission to:</p>
+  <ul>
+    <li><strong>Upload videos to your YouTube channel and manage their metadata</strong> — title, description, category, and privacy status (private, unlisted, or public) — for videos the Service itself creates. The Service does not read, modify, or delete any video, playlist, comment, subscription, or channel data that it did not itself upload.</li>
+  </ul>
+  <p>The Service does not request access to Gmail, Google Drive, Google Calendar, Google Contacts, or any other Google product beyond the YouTube upload permission described above.</p>
+  <p>A separate Google Sheet is used internally to keep a log of previously covered topics, solely to avoid duplicate content. That sheet is accessed with the Service's own credentials, not yours, and contains no personal data about you.</p>
+
+  <h2>How We Use This Information</h2>
+  <p>The only use of your YouTube access is to upload videos the Service generates to your own channel, and to set that video's title, description, category, and privacy status at the time of upload. We do not:</p>
+  <ul>
+    <li>Sell, rent, or share your Google Account data with third parties for advertising or marketing</li>
+    <li>Use your YouTube data to train machine learning models</li>
+    <li>Access your account for any purpose beyond the upload described above</li>
+  </ul>
+
+  <h2>Third-Party Processing</h2>
+  <p>To generate a video, the Service sends non-personal content — topic prompts, draft narration text, and image-generation prompts — to the following third-party providers, solely to produce that video's script, narration audio, and visuals:</p>
+  <ul>
+    <li>Anthropic (Claude API) — script and narration text generation</li>
+    <li>ElevenLabs — text-to-speech narration</li>
+    <li>fal.ai — image generation</li>
+  </ul>
+  <p>None of these providers receive your Google Account credentials, OAuth tokens, or any data from your YouTube account — only the content being created for the video itself.</p>
+
+  <h2>Data Storage and Retention</h2>
+  <p>Video, audio, and image files are generated and temporarily stored on infrastructure controlled by the operator for only as long as needed to assemble and upload the finished video. OAuth tokens are stored securely and used only to make the specific API calls described in this policy.</p>
+  <p>You can revoke this Service's access at any time from <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account → Security → Third-party access</a>. To request deletion of any data held about you, contact us using the details below.</p>
+
+  <h2>Data Security</h2>
+  <p>We use industry-standard measures to protect any credentials and content the Service handles, including credential storage that is not publicly exposed and restricted access to the systems that run the Service.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>This Service is not directed at children and is not intended for use by anyone under the age of 13. We do not knowingly collect information from children.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy from time to time. The "Last updated" date above reflects the most recent revision. Continued authorization of the Service after a change constitutes acceptance of the updated policy.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy, or requests regarding data we hold, can be sent to: orikoblenz@gmail.com</p>
+
+  <footer>
+    Petulant Pizza · <a href="terms-of-service.html">Terms of Service</a> · Last updated July 13, 2026
+  </footer>
+</div>
+</body>
+</html>
